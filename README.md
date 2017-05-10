@@ -53,7 +53,7 @@ These programs and resources are required to install and run Rise Explorer
 Clone the Lisk Explorer Repository:
 
 ```
-git clone https://github.com/LiskHQ/lisk-explorer.git
+git clone -b development https://github.com/4miners/rise-explorer.git
 cd rise-explorer
 npm install
 bower install
