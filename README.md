@@ -1,4 +1,4 @@
-# Lisk Blockchain Explorer
+# Rise Blockchain Explorer
 
 Lisk Explorer version 1.1.0 works in conjunction with the Lisk Core API. It uses Redis for caching data and Freegeoip to parse IP geo-location data.
 
@@ -6,7 +6,7 @@ Lisk Explorer version 1.1.0 works in conjunction with the Lisk Core API. It uses
 
 ## Prerequisites
 
-These programs and resources are required to install and run Lisk Explorer
+These programs and resources are required to install and run Rise Explorer
 
 - Nodejs v6.9.2 or higher (<https://nodejs.org/>) -- Nodejs serves as the underlying engine for code execution.
 
@@ -54,7 +54,7 @@ Clone the Lisk Explorer Repository:
 
 ```
 git clone https://github.com/LiskHQ/lisk-explorer.git
-cd lisk-explorer
+cd rise-explorer
 npm install
 bower install
 ```
