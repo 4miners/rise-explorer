@@ -2,7 +2,7 @@
 
 var Header = function ($rootScope) {
     $rootScope.currency = {
-      symbol: 'ARK'
+      symbol: 'RISE'
     };
 
     this.updateBlockStatus = function (res) {
@@ -23,10 +23,10 @@ var Header = function ($rootScope) {
             $rootScope.currency.tickers = res.tickers;
         }
 
-        // When ticker for user-stored currency is not available - switch to ARK temporarly
-        if ($rootScope.currency.symbol !== 'ARK' && (!$rootScope.currency.tickers || !$rootScope.currency.tickers.ARK || !$rootScope.currency.tickers.ARK[$rootScope.currency.symbol])) {
-            console.log ('Currency ' + $rootScope.currency.symbol + ' not available, fallback to ARK');
-            $rootScope.currency.symbol = 'ARK';
+        // When ticker for user-stored currency is not available - switch to RISE temporarly
+        if ($rootScope.currency.symbol !== 'RISE' && (!$rootScope.currency.tickers || !$rootScope.currency.tickers.RISE || !$rootScope.currency.tickers.RISE[$rootScope.currency.symbol])) {
+            console.log ('Currency ' + $rootScope.currency.symbol + ' not available, fallback to RISE');
+            $rootScope.currency.symbol = 'RISE';
         }
     };
 

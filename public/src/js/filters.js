@@ -56,16 +56,16 @@ angular.module('lisk_explorer')
         var lisk = liskFilter (amount),
             factor = 1;
 
-        if (currency.tickers && currency.tickers.ARK && currency.tickers.ARK[currency.symbol]) {
-          factor = currency.tickers.ARK[currency.symbol];
-        } else if (currency.symbol !== 'ARK') {
+        if (currency.tickers && currency.tickers.RISE && currency.tickers.RISE[currency.symbol]) {
+          factor = currency.tickers.RISE[currency.symbol];
+        } else if (currency.symbol !== 'RISE') {
           // Exchange rate not available for current symbol
           return 'N/A';
         }
 
         if (decimal_places === undefined) {
           switch (currency.symbol) {
-            case 'ARK':
+            case 'RISE':
             case 'BTC':
               return numberFilter ((lisk * factor), 8).replace (/\.?0+$/, '');
             default:

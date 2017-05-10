@@ -8,7 +8,7 @@ var config = require('./config.global');
 config.host = '0.0.0.0'; // Interface to listen on, 0.0.0.0 to listen on all available
 config.port = 6040;      // Port to listen on
 
-// ARK node
+// RISE node
 config.lisk.host = '127.0.0.1';
 config.lisk.port = 4000;
 
@@ -27,11 +27,11 @@ config.cacheTTL = 20; // Time in seconds to store cache in Redis
 config.exchangeRates.enabled = false;         // Exchange rates support (true - enabled, false - disabled)
 config.exchangeRates.updateInterval = 30000; // Interval in ms for checking exchange rates (default: 30 seconds)
 // Configuration for different currency pairs, set false to disable pair
-config.exchangeRates.exchanges.ARK.BTC = 'poloniex';  // ARK/BTC pair, supported: poloniex
-config.exchangeRates.exchanges.ARK.CNY = 'jubi';      // ARK/CNY pair, supported: jubi, bitbays
-config.exchangeRates.exchanges.BTC.USD = 'bitfinex';  // BTC/USD pair, supported: bitfinex, bitstamp, btce
-config.exchangeRates.exchanges.BTC.EUR = 'bitstamp';  // BTC/EUR pair, supported: bitstamp, bitmarket
-config.exchangeRates.exchanges.BTC.PLN = 'bitmarket'; // BTC/PLN pair, supported: bitmarket
+config.exchangeRates.exchanges.RISE.BTC = 'poloniex';  // RISE/BTC pair, supported: poloniex
+config.exchangeRates.exchanges.RISE.CNY = 'jubi';      // RISE/CNY pair, supported: jubi, bitbays
+config.exchangeRates.exchanges.BTC.USD  = 'bitfinex';  // BTC/USD pair, supported: bitfinex, bitstamp, btce
+config.exchangeRates.exchanges.BTC.EUR  = 'bitstamp';  // BTC/EUR pair, supported: bitstamp, bitmarket
+config.exchangeRates.exchanges.BTC.PLN  = 'bitmarket'; // BTC/PLN pair, supported: bitmarket
 
 // Market watcher
 config.marketWatcher.enabled = false; // Market watcher support (true - enabled, false - disabled)

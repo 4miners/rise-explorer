@@ -165,7 +165,7 @@ async.parallel([
         if (err) {
             console.log(err);
         } else {
-            console.log('ARK started at ' + app.get('host') + ':' + app.get('port'));
+            console.log('RISE started at ' + app.get('host') + ':' + app.get('port'));
 
             var io = require('socket.io').listen(server);
             require('./sockets')(app, io);
