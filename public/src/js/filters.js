@@ -13,7 +13,7 @@ angular.module('lisk_explorer')
   .filter('epochStamp', function () {
       return function (d) {
           return new Date(
-              (((Date.UTC(2016, 4, 24, 17, 0, 0, 0) / 1000) + d) * 1000)
+              (((Date.UTC(2017, 2, 21, 13, 0, 0, 0) / 1000) + d) * 1000)
           );
       };
   })
@@ -78,9 +78,9 @@ angular.module('lisk_explorer')
   })
   .filter('nethash', function () {
       return function (nethash) {
-          if (nethash === 'ce6b3b5b28c000fe4b810b843d20b971f316d237d5a9616dbc6f7f1118307fc6') {
+          if (nethash === '4befbd4cd1f2f10cbe69ac0b494b5ce070595ed23ee7abd386867c4edcdaf3bd') {
               return 'Testnet';
-          } else if (nethash === '')  {
+          } else if (nethash === '6e84d08bd299ed97c212c886c98a57e36545c8f5d645ca7eeae63a8bd62d8988')  {
               return 'Mainnet';
           } else {
               return 'Local';
