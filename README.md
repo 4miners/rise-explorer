@@ -36,11 +36,11 @@ These programs and resources are required to install and run Rise Explorer
 
   `sudo npm install -g grunt`
 
-- Forever (<https://github.com/foreverjs/forever>) -- Forever manages the node processes for Lisk Explorer
+- Forever (<https://github.com/foreverjs/forever>) -- Forever manages the node processes for Rise Explorer
 
   `sudo npm install -g forever`
 
-- Git (<https://github.com/git/git>) -- Used for cloning and updating Lisk Explorer
+- Git (<https://github.com/git/git>) -- Used for cloning and updating Rise Explorer
 
   `sudo apt-get install -y git`
 
@@ -50,7 +50,7 @@ These programs and resources are required to install and run Rise Explorer
 
 ## Installation Steps
 
-Clone the Lisk Explorer Repository:
+Clone the Rise Explorer Repository:
 
 ```
 git clone -b development https://github.com/4miners/rise-explorer.git
@@ -62,12 +62,12 @@ bower install
 ## Build Steps
 
 #### Frontend
- The frontend must be built with Grunt before starting Lisk Explorer. Run the following command to compile the frontend components:
+ The frontend must be built with Grunt before starting Rise Explorer. Run the following command to compile the frontend components:
 
 `grunt compile`
 
 #### Market Watcher
- Candlestick data needs to be initialized prior to starting Lisk Explorer. During runtime candlestick data is updated automatically.
+ Candlestick data needs to be initialized prior to starting Rise Explorer. During runtime candlestick data is updated automatically.
 
 To build candlestick data for each exchange run:
 
@@ -83,11 +83,11 @@ The default `config.js` file contains all of the configuration settings for Lisk
 
 #### Top Accounts
 
-To enable Top Accounts functionality, edit your Lisk Client config.json _(not the explorer)_:
+To enable Top Accounts functionality, edit your Rise Client config.json _(not the explorer)_:
 
 ```
 {
-    "port": 8000,
+    "port": 9011,
     "address": "0.0.0.0",
     "version": "0.5.0",
     "minVersion": "~0.5.0",
@@ -98,13 +98,13 @@ To enable Top Accounts functionality, edit your Lisk Client config.json _(not th
     "topAccounts": false, <--- This line needs to be changed to read true
 ```
 
-After the change is made the Lisk Client will need to be restarted. (Example):
+After the change is made the Rise Client will need to be restarted. (Example):
 
-`bash /PATH_TO_LISK_DIR/lisk.sh reload`
+`see rise documentation`
 
-## Managing Lisk Explorer
+## Managing Rise Explorer
 
-To test that Lisk Explorer is configured correctly, run the following command:
+To test that Rise Explorer is configured correctly, run the following command:
 
 `node app.js`
 
@@ -138,7 +138,7 @@ Then restart the Lisk Client (example):
 
 `bash /PATH_TO_LISK_DIR/lisk.sh reload`
 
-Launch Lisk Explorer (runs on port 6040):
+Launch Rise Explorer (runs on port 6040):
 
 `forever start app.js`
 
