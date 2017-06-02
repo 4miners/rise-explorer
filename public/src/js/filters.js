@@ -80,7 +80,7 @@ angular.module('lisk_explorer')
       return function (nethash) {
           if (nethash === '4befbd4cd1f2f10cbe69ac0b494b5ce070595ed23ee7abd386867c4edcdaf3bd') {
               return 'Testnet';
-          } else if (nethash === '6e84d08bd299ed97c212c886c98a57e36545c8f5d645ca7eeae63a8bd62d8988')  {
+          } else if (nethash === '101dedd49f2caa0e20408ccd9c243cae71a78aa21e5872dde1422b46e750720c')  {
               return 'Mainnet';
           } else {
               return 'Local';
